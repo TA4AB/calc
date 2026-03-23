@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.HesapM" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/neon_cyan</item>
+        <item name="colorPrimaryVariant">@color/neon_blue</item>
+        <item name="colorOnPrimary">@color/text_equals</item>
+        <item name="android:windowBackground">@color/bg_dark</item>
+        <item name="android:statusBarColor">@color/bg_dark</item>
+        <item name="android:navigationBarColor">@color/bg_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="BtnBase" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="cornerRadius">20dp</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <style name="BtnNum" parent="BtnBase">
+        <item name="android:textSize">26sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="backgroundTint">@color/btn_num</item>
+        <item name="rippleColor">@color/ripple_light</item>
+    </style>
+
+    <style name="BtnFunc" parent="BtnBase">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/text_func</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="backgroundTint">@color/btn_func</item>
+        <item name="rippleColor">@color/ripple_light</item>
+    </style>
+
+    <style name="BtnOp" parent="BtnBase">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/text_op</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="backgroundTint">@color/btn_op</item>
+        <item name="rippleColor">@color/ripple_cyan</item>
+    </style>
+
+    <style name="BtnEquals" parent="BtnBase">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/text_equals</item>
+        <item name="android:fontFamily">sans-serif-bold</item>
+        <item name="backgroundTint">@color/btn_equals</item>
+        <item name="rippleColor">@color/ripple_light</item>
+        <item name="android:elevation">8dp</item>
+    </style>
+
+</resources>

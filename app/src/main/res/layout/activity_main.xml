@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_dark"
+    android:padding="12dp">
+
+    <!-- Üst bar -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvAboutIcon"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_gravity="end"
+            android:gravity="center"
+            android:text="ℹ"
+            android:textSize="26sp"
+            android:textColor="@color/text_secondary"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+
+    </FrameLayout>
+
+    <!-- Ekran -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:cardBackgroundColor="@color/bg_card"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="8dp"
+        android:layout_marginBottom="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="bottom|end"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tvExpression"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="32sp"
+                android:textColor="@color/text_secondary"
+                android:gravity="end"
+                android:maxLines="2"
+                android:ellipsize="start"
+                android:fontFamily="sans-serif-light" />
+
+            <TextView
+                android:id="@+id/tvResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="48sp"
+                android:textColor="@color/neon_cyan"
+                android:gravity="end"
+                android:maxLines="1"
+                android:ellipsize="start"
+                android:fontFamily="sans-serif-medium" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Butonlar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.2"
+        android:orientation="vertical">
+
+        <!-- Satır 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <Button android:id="@+id/btnClear" style="@style/BtnFunc" android:text="AC" />
+            <Button android:id="@+id/btnPlusMinus" style="@style/BtnFunc" android:text="+/-" />
+            <Button android:id="@+id/btnPercent" style="@style/BtnFunc" android:text="%" />
+            <Button android:id="@+id/btnDivide" style="@style/BtnOp" android:text="÷" />
+        </LinearLayout>
+
+        <!-- Satır 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <Button android:id="@+id/btn7" style="@style/BtnNum" android:text="7" />
+            <Button android:id="@+id/btn8" style="@style/BtnNum" android:text="8" />
+            <Button android:id="@+id/btn9" style="@style/BtnNum" android:text="9" />
+            <Button android:id="@+id/btnMultiply" style="@style/BtnOp" android:text="×" />
+        </LinearLayout>
+
+        <!-- Satır 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <Button android:id="@+id/btn4" style="@style/BtnNum" android:text="4" />
+            <Button android:id="@+id/btn5" style="@style/BtnNum" android:text="5" />
+            <Button android:id="@+id/btn6" style="@style/BtnNum" android:text="6" />
+            <Button android:id="@+id/btnMinus" style="@style/BtnOp" android:text="-" />
+        </LinearLayout>
+
+        <!-- Satır 4 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <Button android:id="@+id/btn1" style="@style/BtnNum" android:text="1" />
+            <Button android:id="@+id/btn2" style="@style/BtnNum" android:text="2" />
+            <Button android:id="@+id/btn3" style="@style/BtnNum" android:text="3" />
+            <Button android:id="@+id/btnPlus" style="@style/BtnOp" android:text="+" />
+        </LinearLayout>
+
+        <!-- Satır 5 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <Button android:id="@+id/btn0" style="@style/BtnNum" android:text="0" />
+            <Button android:id="@+id/btnDot" style="@style/BtnNum" android:text="." />
+            <Button android:id="@+id/btnBackspace" style="@style/BtnFunc" android:text="⌫" />
+            <Button android:id="@+id/btnEquals" style="@style/BtnEquals" android:text="=" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
